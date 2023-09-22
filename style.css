@@ -4,12 +4,22 @@
 }
 
 #loading {
-    background-color: var(--light-grey);
+    background-color: #d34b33;
     position: fixed;
     inset: 0;
     z-index: 9999;
     display: grid;
     place-items: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-rotateplane {
@@ -33,7 +43,7 @@
 
 img {
     z-index: 1;
-    background-size: cover;
+    background-size: auto;
     position: relative;
 }
 
