@@ -5,7 +5,6 @@ const loading2 = document.querySelector('#loading-screen');
 const loadingLogo = document.querySelector('.spinner');
 
 
-
 // ロード画面
 window.addEventListener('load', () => {
     loading1.animate(
@@ -14,8 +13,7 @@ window.addEventListener('load', () => {
             visibility: 'hidden',
         },
         {
-            duration: 2000,
-            delay: 1200,
+            duration: 3000,
             easing: 'ease',
             fill: 'forwards',
         }
@@ -25,8 +23,7 @@ window.addEventListener('load', () => {
             opacity: [1,0]
         },
         {
-            duration: 2000,
-            delay: 1200,
+            duration: 3000,
             easing: 'ease',
             fill: 'forwards',
         }
@@ -40,7 +37,8 @@ image.animate(
         opacity: [0,1]
     },
     {
-        duration: 2000,
+        duration: 5000,
+        delay: 200,
         easing: 'ease',
         fill: 'forwards',
     }
@@ -53,8 +51,8 @@ text.animate(
         opacity: [0,1]
     },
     {
-        duration: 2000,
-        delay: 200,
+        duration: 4000,
+        delay: 400,
         easing: 'ease',
         fill: 'forwards',
     }
